@@ -1,0 +1,1690 @@
+@charset "UTF-8";
+
+@font-face {
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-family: montserrat-bold;
+}
+
+@font-face {
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-family: montserrat-regular;
+}
+@font-face {
+    src: url('../fonts/myradpro-regular.otf');
+    font-family: myradpro;
+}
+
+.bollekes {
+    z-index: 999;
+    position: absolute;
+    float: left;
+    margin: 27.5em 46% 0;
+    display: block;
+    width: 8%;
+}
+
+.clearfix:before, .clearfix:after {
+ content: “ “; display: table;
+}
+.clearfix:after { clear: both; }
+/* For IE < 8 */
+.clearfix { *zoom : 1; }  
+.container {
+    width: 1100px;
+    margin: auto;
+    overflow: auto;
+}
+
+.mq-display-none-or-block {display: none;}
+body {padding: 0; margin: 0;}
+
+.full-container {
+    width: 100%;
+    float: left;
+}
+.banner-header {
+    background-size: cover;
+    margin-top: 100px;
+    height: 25em;
+}
+.fb-color {background-color: #3C5999;}
+.white {background-color: #FFF;}
+.dark-blue {background-color: #10364C;}
+.red {background-color: #E94A42;}
+.green {background-color: #B8B839;}
+.yellow {background-color: #E8AE4E;}
+.color-red {color: #E94A42;}
+a {text-decoration: none;}
+
+/* ----------------------- NAV ----------------------- */
+
+.logo-gsm {display: none;}
+#label-navigatie {display: none;}
+#checkbox-nav {display: none;}
+.fixed-top{
+    max-width: 1100px;
+    margin: auto;
+}
+.top{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0px 5px #aaa;  
+    height: 100px;
+}
+.fixed-top ul{
+    float: left;
+    margin: 5% 0 0% 4%;
+    width: 65%;
+    padding: 0;
+}
+.fixed-top a{
+    text-decoration: none;
+    color: #3d3d3c;
+    font-family: montserrat-bold;
+    font-size: 1em;
+    border-bottom: 5px solid transparent;
+}
+.fixed-top li{
+    list-style: none;
+    float: left;
+    padding-right: 4%;
+}
+.fixed-top .home:hover{
+    transition: 0.7s;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #e94c46;   
+}
+.fixed-top .activiteiten:hover{
+    transition: 0.7s;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #e8ae4e; 
+}
+.fixed-top .infrastructuur:hover{
+    transition: 0.7s;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #12374b; 
+}
+.fixed-top .contact:hover{
+    transition: 0.7s;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #b6b545; 
+}
+.fixed-top img{
+    float: left;
+    width: 16.75%;
+    margin: 0;
+}
+.talen_en_zoeken{
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin: 5.2% 0 0 0;
+    font-size: 1em; 
+    font-family: montserrat-bold;
+}
+.talen_en_zoeken img{
+    float:right;
+}
+.nederlands{
+    color: #3d3d3c;
+    float: left;
+}
+
+	.fixed-top .activeGreen {
+		padding-bottom: 5px;
+		border-bottom: 5px solid #b6b545; 
+	}
+
+	.fixed-top .activeRed {
+		padding-bottom: 5px;
+		border-bottom: 5px solid #e94c46;  
+	}
+
+	.fixed-top .activeBlue {
+		padding-bottom: 5px;
+		border-bottom: 5px solid #12374b; 
+	}
+
+	.fixed-top .activeYellow {
+		padding-bottom: 5px;
+		border-bottom: 5px solid #e8ae4e; 
+	}
+/* ----------------------- Algemeen ----------------------- */
+.wrap{
+    max-width: 1100px;
+    margin: auto;
+}
+/* ----------------------- Contact ----------------------- */
+.topheadercontact{background-image:url(../img/contactzonder.jpg);}
+/*------------------------ 3kolomen Contact----------------*/
+.drietabelen{
+    margin: 3.5em 0;
+    float: left;
+}
+.wie, .waar, .info{
+    float: left;
+    width: 30%       
+}
+.wie, .waar{
+    margin-right: 5%;
+}
+.drietabelen h2{
+    font-size: 1.5em;
+    font-family: montserrat-bold, sans-serif;
+    padding-bottom: .8em;
+}
+.drietabelen p{
+    color: #70706f;
+    font-size: 1em;
+    font-family: myradpro;
+    padding-top: .8em;
+    line-height: 1.5em;  
+}
+/*-------------------------------------------------------*/
+.contacteer h2{
+    width: 100%;
+    float: left;
+    font-size: 2em;
+    font-family: montserrat-bold, sans-serif;
+    text-align: center;
+    margin: 2em 0 1em;
+    color: #3C3C3B;
+}
+.contacteer p{
+    clear: both;
+    font-size: 1.2em;
+    color: #70706f;
+    font-family: montserrat-regular, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    letter-spacing: -.03em;
+}
+/*------------------------ FORM --------------------------*/
+.contactform{
+    width: 100%;   
+    font-family: myradpro;
+}
+#onderwerp, #naam, #email, #Soortpersoon{
+    box-sizing: border-box;
+    margin-top: 1em;
+    border: 0;
+    float: left;
+    width: 30%;
+    background-color: #EBEBEB;
+    color: #70706f;
+    padding: 1em;
+    font-size: 1em;  
+}
+#onderwerp, #email{
+    margin-right: 5%;
+}
+#bericht{
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+    margin-top: 2em;
+    clear: both;
+    width: 100%;
+    background-color: #EBEBEB;
+    color: #70706f;
+    padding: 1em;
+    font-size: 1em;
+    height: 8em;
+    max-height: 8em;
+    max-width: 100%;
+}
+.form_wie{
+    display: block;
+    text-align-last: center; 
+}
+.buttonContact{
+    width: 20%;
+    background-color: #F9F9F9;
+    border: none;
+    color: black;
+    padding: 1%;
+    display: inline-block;
+    box-sizing: border-box;
+    clear: both;
+    margin: 2em 0 2em 0;
+}
+.buttonContact:hover{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #B8B839;
+    color: #FFF;
+}
+.checkbox{
+    width: 100%;
+    float: right;
+    margin-top: 2em; 
+}
+.checkbox p{
+    font-size: 1.2em;
+}
+/* ----------------------- (Activiteiten detail) ----------------------- */
+.hoofdstuk{
+	font-family: montserrat-bold, sans-serif; 
+}
+.hoofdstuk p{margin: 0.5em 0;}
+.foto{
+	margin-top: 8.625em;
+	height: 25em;
+}
+.atletiek{
+	background: url(../img/SPatletiek.jpg) no-repeat;
+	background-size: cover;
+}
+.kinball{
+	background: url(../img/SPkinball.jpg) no-repeat;
+	background-size: cover;
+}
+.muaythai{
+	background: url(../img/SPmuaythai.jpg) no-repeat;
+	background-size: cover;	
+}
+.onderwaterhockey{
+	background: url(../img/SPonderwaterhockey.jpg) no-repeat;
+	background-size: cover;	
+}
+.rugby{
+	background: url(../img/SPrugby.jpg) no-repeat;
+	background-size: cover;	
+}
+.tafeltennis{
+	background: url(../img/SPtafeltennis.jpg) no-repeat;
+	background-size: cover;
+}
+.taijutsu{
+	background: url(../img/SPtaijutsu.jpg) no-repeat;
+	background-size: cover;
+}
+.veldvoetbal{
+	background: url(../img/SPveld.jpg) no-repeat;
+	background-size: cover;
+}
+
+.volleybal{
+	background: url(../img/SPvolleybal.jpg) no-repeat;
+	background-size: cover;
+}
+
+.waterpolo{
+	background: url(../img/SPwaterpolo.jpg) no-repeat;
+	background-size: cover;
+}
+.yoga{
+	background: url(../img/SPyoga.jpg) no-repeat;
+	background-size: cover;
+}
+
+.zaalvoetbal{
+	background: url(../img/SPzaalvoetbal.jpg) no-repeat;
+	background-size: cover;
+}
+.zwemmen{
+	background: url(../img/SPzwemmen.jpg) no-repeat;
+	background-size: cover;
+}
+.foto header{
+	max-width: 1100px;
+	margin: auto;
+	text-align: left;
+}
+.foto header h1{
+	float: left;
+	margin: 2.5em 0 0.8em;
+	padding: 0.2em;
+	font-family: montserrat-bold, sans-serif;
+	font-size: 2.8em;
+	display: inline-block;
+	background-color: rgba(232,175,72,1);
+	color: white;				
+}
+.foto header p{
+	clear: left;
+	font-family: montserrat-bold, sans-serif;
+	font-size: 1.5em;
+	max-width: 60%;
+	line-height: 1.5em;
+	color: white;
+}			
+.artikels section {
+	display: inline-block;
+	width: 28.53174020576643%;
+	margin-right: 7.202389691350355%;
+	float: left;
+	margin-bottom: 2em;
+	color: #252525;
+}
+.artikels section:last-child{
+	float: right;
+	margin-right: 0;
+}
+.waar h2{
+	margin-top: 0;
+	clear: both;
+	font-size: 1.5em;
+}			
+.artikels hr, .waar hr { 
+	display: block;
+	margin: 1em 0;
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #e8af48;
+}
+.artikels a{
+	display: inline-block;
+	color: #e8af48;
+	font-weight: bold;
+}
+.plaats{
+	float: left;
+	width: 29.53174020576643%;
+	margin: 1em 6.202389691350355% 1em 0;
+	padding-top: 24.93174020576643%;
+	text-align: center;
+}
+.sportcomplex{	
+	background: url(../img/Elsene-156-medium-300x200.jpg) no-repeat;
+	background-size: contain;
+}
+
+.jette{
+	background: url(../img/images.jpg) no-repeat;
+	background-size: contain;
+}
+.brussel{
+	background: url(../img/1132759217.jpg) no-repeat;
+	background-size: contain;
+}
+
+.sportcomplex h3, .jesse h3, .jette h3, .brussel h3, .mabo h3{
+	padding: 1em 0;
+	margin: 0;
+	background-color: rgba(225,225,225,0.5);
+}			
+.kaartplaats{
+	margin: 1em 0;
+	float: right;
+	width: 64.26587010288321%;
+	z-index: -9999;
+	position: relative;
+}
+.kaart{ 
+	position: relative;
+	padding-bottom: 45.86348041153286%;
+	height: 0;
+}
+.kaart iframe{
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+}
+/* ----------------------- Banners Sportpagina's ----------------------- */
+
+.banner {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	font-family: montserrat-bold, sans-serif;
+	height: 25em;
+	margin-top: 8.5em;
+	width: 100%;
+}
+.banner p {
+	margin: auto;
+	padding-top: 7.5em;
+	max-width: 1100px;
+}
+.sport {
+	background: #e9ad4b;
+	font-size: 3em;
+	line-height: 2em;
+	padding: 0 1em;
+}
+.omschrijving {
+	font-size: 1.5em;
+	margin-top: -6em;
+}
+.aikido {
+	background-image: url(../img/SPaikido.jpg);
+}
+.badminton {
+	background-image: url(../img/SPbadminton.jpg);
+}
+.basketbal {
+	background-image: url(../img/SPbasketbal.jpg);
+}
+.bodymix {
+	background-image: url(../img/SPbodymix.jpg);
+}
+.cheerobics {
+	background-image: url(../img/SPcheerobics.jpg);
+}
+.conditiegym {
+	background-image: url(../img/SPconditiegym.jpg);
+}
+.diepzeeduiken {
+	background-image: url(../img/SPdiepzeeduiken.jpg);
+}
+.engelsboksen {
+	background-image: url(../img/SPengelsboksen.jpg);
+}
+.floorball {
+	background-image: url(../img/SPfloorball.jpg);
+}
+.gaelicfootball {
+	background-image: url(../img/SPgaelicfootball.jpg);
+}
+.hiphop {
+	background-image: url(../img/SPhiphop.jpg);
+}
+.hurling {
+	background-image: url(../img/SPhurlen.jpg);
+}
+.karate {
+	background-image: url(../img/SPkarate.jpg);
+}
+.kendo {
+	background-image: url(../img/SPkendo.jpg);
+}
+/* ----------------------- Detailpagina's Sporten ----------------------- */
+
+.detail-location {
+    width: 100%;
+    float: left;
+    margin: 5% 0 0;
+}
+.detailSporten {
+	box-sizing: border-box;
+	font-family: montserrat-bold, sans-serif;
+}
+.green-and-border {color: #B8B839; border-bottom: 3px solid #B8B839;}
+.yellow-and-border {color: #E8AE4E; border-bottom: 3px solid #E8AE4E;}
+.titel {
+    margin-top: 5%;
+    float: left;
+	color: #e9ad4b;
+    font-size: 1.5em;
+    font-family: montserrat-bold, sans-serif;
+    padding-bottom: .8em;
+    border-bottom: 3px solid #e9ad4b;
+    width: 100%;
+}
+.info {
+	color: #e9ad4b;
+}
+.waarfoto {
+	background-image: url(../img/Splocatie.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 320px;
+	width: 30%;
+    margin: 2% 0 0;
+}
+.waarfoto.jette {
+	background-image: url(../img/SPjette.jpg);
+}
+.waarfoto.markten {
+	background-image: url(../img/SPmarkten.jpg);
+}
+.jesse{float: left;
+	background: url(../img/jette.jpg) no-repeat;
+	background-size: contain;
+}
+.mabo{
+	background: url(../img/college.png) no-repeat;
+	background-size: contain;
+}
+.waarkaart {
+	float: right;
+	width: 65%;
+    margin: 2% 0 0;
+}
+.waarkaart iframe {
+	height: 320px;
+	width: 100%;
+	float: left;
+}
+
+.kleurke{
+	color: #e9ad4b;
+}
+
+.kleurke:hover{
+	text-decoration: underline;
+}
+/* ----------------------- Infrastructuur ----------------------- */
+
+#bgInfrastructuur {
+    background-image: url("../img/swimming-pool.jpg");
+}
+.Infrastructuur .atletiek {
+    background-image: url("../img/Atletiekpiste.jpg");
+    margin-top: 3em;	
+}
+.Infrastructuur .tarief {
+    background-image: url("../img/Tarief.jpg");
+    margin-top: 3em;
+}
+.Infrastructuur .omnisport {
+    background-image: url("../img/Omnisporttereinen.jpg");
+    margin-right: 0;
+    margin-top: 3em;
+}
+.zwembad {
+    background-image: url("../img/swimming.jpg");		
+}
+.uresidence {
+    background-image: url("../img/uresidence.jpg");	
+}
+.fitness {
+    background-image: url("../img/fitness.jpg");
+    margin-right: 0;
+}
+.infrastructuur-maintop {
+    float: left;
+}
+.InfoAlgemeen {
+    clear: both;
+    background-color: rgba(230, 231, 231, .5);
+    background-size: cover;
+    width: 100%;
+    float: left;
+    margin-bottom: 3%;
+	}
+
+.triangle {
+    border: 35px solid;
+    border-color: #FFF transparent transparent transparent;
+    width: 0px;
+    height: 0px;
+    float: left;
+}
+.triangle-margin1 {
+    margin-left: 10%;
+}
+.triangle-margin2 {
+    margin-left: 47%;
+}
+.triangle-margin3 {
+    margin-left: 83%;
+}
+.inAlgemeen {
+    width: 48%;
+    float: left;
+    margin: .5% 4% 4% 0;
+    font-family: montserrat-regular, sans-serif;
+    clear: right;
+}
+.inAlgemeen img {
+    width: 100%;
+}
+.inAlgemeen h1 {
+    border-bottom: 3px solid #12374b;
+    font-family: montserrat-bold, sans-serif;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.inAlgemeen p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+	
+.AlgRechts {
+    margin-right: 0;
+}
+
+.AlgRechts a, .inAlgemeen a{
+    color: #EAAE32;
+    text-decoration: none;
+}
+
+.AlgRechts a:hover, .inAlgemeen a:hover{
+    color: #EAAE32;
+    text-decoration: underline;	
+}
+.form {
+    float: left;
+    clear: both;
+    font-family: montserrat-regular, sans-serif;
+    width: 100%;
+}
+.inputForm {
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 1%;
+    float: left;
+}
+.textbox {
+    width: 30%;
+    margin-right: 5%;
+}
+.adres {
+    float: left;
+    margin-top: 1.5em;
+    width: 47.5%;
+    margin-right: 5%;
+}
+.textarea {
+    clear: both;
+    resize: none;
+    height: 8em;
+    margin-top: 1em;
+}
+.country {
+    height: 2.5em;	
+    background-color: white;
+}
+#datum {
+    clear: both;
+    float: left;
+}
+.kopie {
+	margin-bottom: 1em;
+}
+
+.button {
+    width: 20%;
+    background-color: #FFF;
+    border: none;
+    color: black;
+    padding: 1%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}	
+.button:hover {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #12374b;
+    color: #FFF;
+}
+	.last {
+    margin-right: 0;	
+}
+table {
+    border-spacing: 2px 2px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: left;
+	}	
+table th {
+    width: 28%;
+}
+table th:first-child {
+    text-align: left;
+    border-right: 1px solid black;
+    border-bottom: none;
+}
+table th, table tr {
+    padding: 2%;	
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+table tr:last-child {
+    border: none;
+}
+.littlefont {
+    font-size: 65%;
+}
+.littlefont p {
+	font-size: 120%;
+	margin: 2% 0 0 0; 
+}
+
+table td {
+    text-align: center;
+}
+.bold {
+    font-family: montserrat-bold, sans-serif;
+}	
+.kleine-aanpassing {
+    margin-top: 1em;
+}
+.anchor {
+	display: block;
+	height: 20em;
+	margin-top: -20em;
+	visibility: hidden;
+}
+/*---------------------Sportkaart------------------------*/
+
+#bgSportkaart {
+    background-image: url("../img/sportkaart-bg.png");
+}	
+.Sportkaart {
+    width: 45%;
+	margin: 2em 10% 4% 0;		
+	float: left;
+	font-family: montserrat-regular, sans-serif;
+	outline: 0;
+	border: none;
+}
+.Sportkaart:nth-child(2) {
+	margin-right: 0;
+	margin-bottom: 1em;
+}
+.Sportkaart:nth-child(3) {
+	margin-right: 0;
+	float: right;
+}
+.Sportkaart:last-child {
+	width: 100%;
+}
+.Sportkaart h1 {
+	border-bottom: 3px solid #e94c46; 
+	font-family: montserrat-bold, sans-serif;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	color: #e94c46;
+}
+.Sportkaart p {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+.aanvraagSportkaart {
+	clear: both;
+}
+.insideform {
+	margin: 2% 2% 2% 0;
+	width: 48%;
+	float: left;
+}
+.name {
+	width: 100%;	
+	float: left;
+	clear: both;		
+}
+.generateEmail {
+	width: 29%;
+	margin-right: 5%;
+	border: 1px solid transparent;
+	background-color: #F9F9F9;
+	outline: 0;
+	float: left;
+	padding: 1%;
+	box-sizing: border-box;
+}
+.generateEmail:last-child {
+	margin-right: 0;
+		
+}	
+.buttonSportkaart {
+	width: 20%;
+	background-color: #F9F9F9;
+    border: none;
+    color: black;
+    padding: 1%;
+    display: inline-block;
+    box-sizing: border-box;
+		clear: both;
+}
+.buttonSportkaart:hover {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	background-color: #e94c46;
+	color: #FFF;
+}
+.studentMail {
+	height: 2.5em;
+	background-color: #F9F9F9;
+}
+/* ----------------------- HOMEPAGINA ----------------------- */
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider {
+    overflow: hidden;
+    margin-top: 100px;
+    z-index: -1000;
+    height: 25em;
+}
+div#slider .full-slider section {
+    width: 20%;
+    float: left;
+}
+div#slider .full-slider { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 34s slidy infinite; 
+}
+h1.header-title {
+    font-family: montserrat-bold;
+    font-size: 2.8em;
+    padding: 1%;
+    color: #FFF;
+    float: left;
+    margin: 2.5em 0 .5em 0;
+    overflow: hidden;
+}
+p.header-p {
+    float: left;
+    width: 60%;
+    color: #FFF;
+    font-family: montserrat-bold;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    overflow: hidden;
+    clear: both;
+}
+.slide-settings {
+    height: 400px;
+    background-size: cover;
+}
+#slide1 { background-image: url('../img/slide1.jpg'); }
+#slide2 { background-image: url('../img/slide2.jpg'); }
+#slide3 { background-image: url('../img/slide3.jpg'); }
+#slide4 { background-image: url('../img/slide4.jpg'); }
+
+/* HEADLINES */
+
+section.headline {
+    width: 30%;
+    margin: 6% 5% 6% 0;
+    float: left;
+}
+section.headline:last-child {
+    margin-right: 0;
+}
+section.headline h2 {
+    font-family: montserrat-bold;
+    color: #10364C;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section.headline img {
+    height: 75px;
+    display: block;
+    margin: auto;
+    margin: 7.5% auto;
+}
+section.headline p {
+    font-family: myradpro;
+    color: #9D9D9C;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2em;
+}
+section.headline a {
+    font-family: montserrat-bold;
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    display: table;
+    padding: 2%;
+    margin: 7% auto 0;
+}
+section.headline a:hover {
+    transition: all .5s;
+    background-color: #E94A42;
+}
+section#feed-plus-vandaag {
+    background-image: url("../img/feed-plus-vandaag-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    float: left;
+}
+section.info-block {
+    width: 49%;
+    margin: 5% 0 0 2%;
+    float: left;
+}
+section.info-block:first-child {
+    margin-left: 0;
+}
+section.info-block h2 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+    font-family: montserrat-bold;
+    overflow: hidden;
+    padding: 2.5% 0;
+}
+section.info-box {
+    margin: 12% 0 11.5% 0;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.fb-color {background-color: #3C5999;}
+
+section#fb-feed a {
+    float: left;
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    padding: 4% 0;
+    color: #3C3C3B;
+    font-family: montserrat-bold;
+    font-size: 1.2em;
+}
+section#fb-feed a:hover {
+    background-color: #C6C6C6;
+    margin: 0;
+    width: 100%;
+    transition: all .5s;
+}
+#form-home {
+    width: 90%;
+    float: left;
+    margin: 0 5%;
+}
+#form-home select {
+    margin: 5% 5% 0 0;
+    width: 47.5%;
+    float: left;
+    font-family: montserrat-bold;
+    font-size: 1.2em;
+    color: #3C3C3B;
+    border: 0;
+    outline: 0;
+}
+#form-home select:last-child {
+    margin-right: 0;
+}
+#label-home {
+    width: 90%;
+    padding: 0.35em 0;
+    margin: 5%;
+    float: left;
+    font-family: montserrat-bold;
+    font-size: 1.2em;
+    text-align: center;
+    color: #FFF;
+}
+#menu-toggle-home {
+    display: none;
+}
+#geen-sport-toggl {
+    float: left;
+    width: 90%;
+    margin: 0 5% 5%;
+    display: none;
+}
+#menu-toggle-home:checked + #geen-sport-toggl {
+    display: block;
+}
+#geen-sport-toggl p {
+    padding: 1em;
+    font-family: myradpro;
+    color: #FFF;
+    font-size: 1em;
+    line-height: 1.675em;
+}
+#geen-sport-toggl a {
+    font-weight: bolder;
+    color: #FFF;
+    font-family: montserrat-bold;
+}
+.number-box {
+    width: 25%;
+    float: left;
+    margin: 5% 0;
+}
+.align-center {
+    text-align: center;
+}
+.number-box h3 {
+    color: #11364C;
+    font-size: 2em;
+    font-family: montserrat-bold;
+    overflow: hidden;
+    border-bottom: 3px solid #C6C6C6;
+    display: inline-table;
+    padding-bottom: 2%;
+}
+.number-box a {
+    color: #11364C;
+    font-size: 1.2em;
+    font-family: montserrat-bold;
+    text-align: center;
+}
+.anchor {
+	display: block;
+	height: 20em;
+	margin-top: -20em;
+	visibility: hidden;
+}
+#current-GRSG {
+    border-bottom: 3px solid #E94A42;
+    padding: 0 0 0.25em 0;
+}
+.number-box a:hover {
+    transition: all .4s;
+    color: #E94A42;
+}
+.number-box img {
+    display: block;
+    margin: 0 auto 2%;
+    width: 50%;
+}
+.no-margin-top {margin-top: 0;}
+
+.reduce-margin-bottom {margin-bottom: 1%;}
+
+.runner-opacity {opacity: 0.4;}
+
+.home-margin-top-zero {margin-top: 0;}
+
+.position-and-line {
+    background-image: url("../img/red.jpg");
+    background-size: cover;
+}
+.current-circle {
+    float: left;
+    background-color: #CD3333;
+    border-radius: 3em;
+    width: 50px;
+    height: 50px;
+    margin: 0 45%;
+}
+.next-circle {
+    float: left;
+    background-color: #CD3333;
+    border-radius: 3em;
+    width: 30px;
+    margin: auto;
+    height: 30px;
+    margin: 10px 40% 0;
+}
+.GRSG-title {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: montserrat-bold;
+    float: left;
+    width: 100%;
+}
+.GRSG-text {
+    text-align: center;
+    font-size: 1em;
+    color: #878787;
+    line-height: 2.25em;
+    font-family: myradpro;
+    margin: 2% 5% 5%;
+    width: 90%;
+    float: left;
+}
+/***************************** ACTIVITEITEN ************************/
+
+#headerActiviteiten {background-image: url("../img/headerActiviteiten.jpg");}
+
+.box-activities {
+    width: 28%;
+    float: left;
+    background-size: cover;
+}
+.box-a-margin {margin: 5% 8% 5% 0;}
+.box-a-margin-2 {margin: 5% 0 5% 0;}
+.box-a-margin-3 {margin: 0 8% 5% 0;}
+.box-a-margin-4 {margin: 0 0 5% 0;}
+
+.box-activities h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0.75em 0;
+    color: #FFF;
+    font-family: montserrat-regular;
+    margin-top: 80%;
+}
+.box-activities:hover {
+    opacity: .8;
+    transition: all 0.5s;
+}
+#alle-sporten {background-image: url("../img/sportaanbod1.jpg");}
+#eenmalig {background-image: url("../img/eenmalig.jpg");}
+#competities {background-image: url("../img/competities.jpg");}
+#Aikido {background-image: url("../img/aikido.jpg");}
+#Basketbal {background-image: url("../img/basketbal.jpg");}
+#Badminton {background-image: url("../img/badminton.jpg");}
+#Atletiek {background-image: url("../img/atletiek.jpg");}
+#Bodymix {background-image: url("../img/bodymix.jpg");}
+#Cheerobics {background-image: url("../img/cheerobics.jpg");}
+#Conditiegym {background-image: url("../img/conditiegym.jpg");}
+#Diepzeeduiken {background-image: url("../img/diepzee.jpg");}
+#Engelsboksen {background-image: url("../img/engelsboksen.jpg");}
+#Floorball {background-image: url("../img/floorball.jpg");}
+#Gaelic {background-image: url("../img/gaelic.jpg");}
+#Hiphop {background-image: url("../img/hiphop.jpg");}
+#Hurling {background-image: url("../img/hurling.jpg");}
+#Karate {background-image: url("../img/karate.jpg");}
+#Kendo {background-image: url("../img/kendo.jpg");}
+#Kinball {background-image: url("../img/kinball.jpg");}
+#MTK {background-image: url("../img/muaythai.jpg");}
+#Onderwaterhockey {background-image: url("../img/onderwaterhockey.jpg");}
+#Rugby {background-image: url("../img/rugby.jpg");}
+#Tafeltennis {background-image: url("../img/tafeltennis.jpg");}
+#Taijutsu {background-image: url("../img/taijutsu.jpg");}
+#Veldvoetbal {background-image: url("../img/veldvoetbal.jpg");}
+#Volleybal {background-image: url("../img/volleybal.jpg");}
+#Waterpolo{background-image: url("../img/waterpolo.jpg");}
+#Yoga {background-image: url("../img/yoga.jpg");}
+#Zwemmen {background-image: url("../img/zwemmen.jpg");}
+#Zaalvoetbal {background-image: url("../img/zaalvoetbal.jpg");}
+.infoAlgemeen {
+    clear: both;
+    background-color: rgba(230, 231, 231, .5);
+    background-size: cover;
+    width: 100%;
+    float: left;
+    margin-bottom: 3%;
+}
+h2.sporten-title {
+    margin: 2% 0;
+    font-size: 2.6em;
+    font-family: montserrat-bold;
+    color: #3C3C3B;
+}
+h3.sporten-subtitle {
+    margin: 0 0 2%;
+    font-size: 1.3em;
+    font-family: montserrat-bold;
+    color: #706F6F;
+}
+#sporten-search {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin: 0 0 2%;
+    background-color: #DADADA;
+    font-family: myradpro;
+    font-size: 1em;
+    padding: 0.75em 0;
+    text-indent: 0.75em;
+    color: #706F6F;
+}
+.alphabet {
+    width: 3.8461538461%;
+    float: left;
+    background-color: #DADADA;
+    line-height: 2em;
+    font-size: 1em;
+    color: #706F6F;
+    font-family: montserrat-bold;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 2px solid #BBB;
+    cursor: pointer;
+}
+.alphabet:hover {
+    background-color: #EAB23C;
+    color: #FFF;
+}
+.alphabet:last-child {border-right: 0;}
+.margin-for-sporten {margin: 0 8% 5% 0;}
+.margin-for-sporten-2 {margin: 0 0 5% 0;}
+
+#label-meer-sporten {
+    text-align: center;
+    font-size: 1.2em;
+    color: #3C3C3B;
+    float: left;
+    width: 100%;
+    font-family: montserrat-bold;
+    padding: 0 0 2% 0;
+}
+#menu-toggle-ac {display: none;}
+#show-other-sports {display: none;}
+#menu-toggle-ac:checked + #show-other-sports {display: block;}
+
+.Algemeen {
+    width: 48%;
+    float: left;
+    margin: .5% 4% 4% 0;
+    font-family: montserrat-regular;
+}
+
+.Algemeen h1 {
+    font-family: montserrat-bold, sans-serif;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.Algemeen2 {width: 100%; float: left; font-family: montserrat-regular;}
+.Algemeen2 h1 {
+    font-family: montserrat-bold, sans-serif;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.Algemeen-h1-border {color: #E8AE4E; border-bottom: 3px solid #E8AE4E;}
+.Algemeen-h1-border-b {color: #10364C; border-bottom: 3px solid #10364C;}
+.Algemeen p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color: #3C3C3B;
+}
+.Algemeen2 p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color: #3C3C3B;
+}
+.AlgRechts {margin-right: 0;}
+.Algemeen iframe {
+    width: 100%;
+    height: 300px;
+    margin: 3% 0 0;
+    float: left;
+}
+.AlgRechts a:hover, .Algemeen a:hover {
+    color: #EAAE32;
+    text-decoration: underline;
+}
+.AlgRechts a, .Algemeen a {
+    color: #EAAE32;
+    text-decoration: none;
+}
+#BF-img {width: 100%;}
+
+	.kalender {
+		width: 30%;
+		height: auto;
+	}
+
+	#label-float-left {
+		float: left;	
+	}
+
+
+/* ----------------------- FOOTER ----------------------- */
+ 
+footer{
+    overflow: auto;
+    background-color: rgb(217, 217, 217);
+		clear: both;
+}	 
+footer h2{
+    font-family: montserrat-bold, sans-serif;
+    color: gray;
+    text-align: center;
+    margin: 3.5% 0;
+    font-size: 1.5em;
+}		
+.bottom{
+    max-width: 1100px;
+    margin: auto;	
+}		 
+footer figure{
+    width: 14%;
+    float: left;
+    margin-right: 3.2%;
+    margin-bottom: 3%; 
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-start: 0;
+}		 
+footer figure img{
+    width: 100%;
+    opacity: .60;
+    
+}
+footer figure img:hover{
+    opacity: 1;
+    transition: all .5s;
+    transform: scale(1.1);
+}		
+footer figure:last-child{
+    margin: 0; 
+}	 
+#footertekst {
+    clear: both;
+    font-family: montserrat-regular, sans-serif;
+    font-size: .8em;
+    text-align: center;
+    background-color: rgb(230, 231, 233);
+    color: rgb(93, 94, 96);
+    padding: 1.2em 0;
+}		 
+.stuvo{
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: -6%;
+}
+/* -------------------- MEDIAQUERIES!!!! --------------------- */
+
+@media screen and (max-width: 1100px) {
+    .container {max-width: 900px;}
+    .wrap {max-width: 900px;}
+    .bottom {max-width: 900px;}
+    .fixed-top {max-width: 900px;}
+    .top {height: 85px;}
+    div#slider{margin-top: 85px;}
+    .banner-header{margin-top: 85px;}
+		.drietabelen h2 {
+    font-size: 1.2em; 
+    }
+	
+		 .bollekes {
+        margin: 27em 45% 0;
+        display: block;
+        width: 10%;
+    }
+	
+	
+    section.headline p {height: 8.5em;}    
+}
+@media screen and (max-width: 900px) {
+    .container {max-width: 90%;}
+    .wrap {max-width: 90%;}
+    .bottom {max-width: 90%;}
+    .fixed-top {max-width: 90%;}
+    .top {height: auto;}
+    div#slider{margin-top: 0;}
+    .banner-header{margin-top: 0;}
+		#BF-img { margin-top: -10%;}
+    
+	 .Algemeen {
+        width: 100%;
+        margin: 12.5% 0 0;
+    }
+    .Algemeen:first-child {margin-top: 0;}
+    .Algemeen2 {
+        width: 100%;
+        margin: 12.5% 0 0;
+    }
+    .Algemeen2:first-child {margin-top: 0;}
+	
+    .logo-gsm {
+        display: block;
+        width: 20%;
+        float: left;
+        z-index: 1000;
+        position: absolute;
+    }
+    
+    .mq-display-none {display: none;}
+    
+    #label-navigatie {
+        display: block;
+        right: 2.5%;
+        top: 1%;
+        position: fixed;
+        z-index: 1000;
+    }
+	
+    .Sportkaart {width: 100%;}
+    .buttonSportkaart {width: 40%;}
+    #checkbox-nav:checked + .top {display: block;}
+    .fixed-top {max-width: 100%;}
+    .top{
+        display: none;
+        top: 8%;
+        z-index: 1000;
+        left: 37.5%;
+        width: 60%;
+        background-color: rgba(19, 55, 75, 0.8);
+        box-shadow: 0 0 0;
+        float: right;
+    }
+    .fixed-top ul{
+        float: left;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .fixed-top a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: montserrat-bold;
+        font-size: 1.2em;
+        border-bottom: 0;
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        padding: 3%;
+    }
+    .fixed-top li{
+        list-style: none;
+        float: left;
+        padding-right: 0;
+        width: 100%;
+    }
+    .fixed-top li:first-child {padding-top: 3%;}
+    .fixed-top li:last-child {border-bottom: 4px solid #FFF; padding-bottom: 3%;}
+    .fixed-top .home:hover{padding-bottom: 0; border-bottom: 0;}
+    .fixed-top .activiteiten:hover{padding-bottom: 0; border-bottom: 0;}
+    .fixed-top .infrastructuur:hover{padding-bottom:0; border-bottom: 0;}
+    .fixed-top .contact:hover{padding-bottom:0; border-bottom: 0;}
+    .fixed-top img{display: none;}
+    .talen_en_zoeken{
+        float: left;
+        margin: 0;
+        width: 100%;
+        background-color: rgb(19, 55, 75);
+    }
+    .talen_en_zoeken img {float:right}
+    .nederlands{
+        background-color: transparent;
+        color: #FFF;
+        padding: 5% 3%;
+        box-sizing: border-box;
+        float: left;
+    }
+    .engels {
+         color: #FFF;
+        padding: 5% 3%;
+        box-sizing: border-box;
+        float: left;
+    }
+    section.headline p {font-size: 1em; width: 100%;}
+    p.header-p {
+        width: 100%;
+        font-size: 1em;
+    }
+    
+    div#slider {
+        margin-top: 0;
+        height: 25em;
+    }
+    .banner-header {
+        margin-top: 0;
+        height: 25em;
+    }
+    .box-activities h2 {font-size: .75em;}
+    .topheadercontact{ background-image: url(../img/contactpaginaKlein2.jpg); background-size: cover;}
+    .drietabelen h2 {font-size: 1em;}
+    .bollekes {margin: 22em 44% 0; width: 12%}
+
+@media screen and (max-width: 850px) {
+	 	section.headline h2 {font-size: 1em;}
+    section.headline img {height: 50px;}
+    section.headline p {height: 11.5em;}    
+}
+
+@media screen and (max-width: 600px) { section.headline p {height: 13.5em;}    
+}
+
+@media screen and (max-width: 550px) {
+    .logo-gsm {width: 35%;}
+   	
+	
+		table {
+			width: 100%;	
+		}
+    .bollekes {
+        margin: 22em  35% 0;
+        display: block;
+        width: 30%;
+    }
+    
+    h1.header-title {
+        font-size: 1.5em;
+        margin: 5em 5% 0;
+        text-align: center;
+        width: 90%;
+        padding: 0.4em 0;
+    }
+    p.header-p {
+        width: 90%;
+        font-size: .9em;
+        line-height: 2em;
+        margin: 5% 5% 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 90%;
+        margin: auto 5%;
+    }
+    .wrap {
+        max-width: 90%;
+        margin: auto 5%;
+    }
+    section.headline {
+        width: 100%;
+        margin: 16% 0 0;
+    }
+    section.headline:last-child {margin-bottom: 16%;}
+    section.headline h2 {font-size: 2em;}
+    section.headline img {height: 6em;}
+    section.headline p {font-size: 1.25em; height: auto;}
+    section.headline a {font-size: 1.5em;}
+    section.info-block {
+        width: 100%;
+        margin: 0;
+    }
+    section.info-block:first-child {margin-top: 12%;}
+    .number-box img {display: none;}
+    .current-circle {margin: 0 22.5%;}
+    .mq-margin-top {margin-top: 12%;}
+    .number-box a {font-size: 1em;}
+    .GRSG-title {font-size: 2.5em; margin-top: 12%;}
+    .GRSG-text {
+        font-size: 1.25em;
+        line-height: 2em;
+        margin: 12% 0;
+        width: 100%;
+    }
+    #headerActiviteiten {margin-top: 0;}
+    .box-a-margin {margin: 10% 5% 0%;}
+    .box-a-margin-2 {margin: 10% 5% 5%;}
+    .box-activities {width: 90%;}  
+    .box-a-margin-3 {margin: 5%;}
+    .box-a-margin-4 {margin: 5%;}
+    .wie, .waar, .info {
+        width: 100%;
+        margin-bottom: 12.5%;
+    }
+    .wie, .waar {margin-right: 0%;}
+    .drietabelen h2 {font-size: 2em;}
+    .drietabelen p {font-size: 1.25em; line-height: 2em;}
+    .drietabelen {margin: 3.5em 0 0;}
+    .contacteer h2 {margin: 0 0 0.5em; font-size: 2.5em; line-height: 1.5em;}
+    .contacteer p {line-height: 2em; font-size: 1.25em;}
+    #onderwerp, #email {margin-right: 0;}
+    #onderwerp, #naam, #email, #Soortpersoon {
+        margin-top: 1em;
+        width: 100%;
+        font-size: 1.25em;
+    }
+	
+		.Sportkaart {
+			width: 100%;
+		}
+	
+		.insideform {
+			width: 100%;
+			margin-bottom: 8%;
+		}
+	
+    #bericht {
+        margin-top: 1em;
+        font-size: 1.25em;
+    }
+    .checkbox p {
+        font-size: 1.25em;
+        text-align: center;
+    } 
+    .buttonContact {
+        width: 100%;
+        padding: 1em 0;
+        background-color: #B8B839;
+        font-size: 1.25em;
+        margin: 1em 0;
+        float: left;
+        color: #FFF;
+    }
+    .waarfoto {
+        height: 27em;
+        width: 100%;
+        margin: 5% 0 0;
+    }
+    .waarkaart {
+        float: left;
+        width: 100%;
+        margin: 5% 0;
+    }
+	
+		.kalender {
+			width: 100%;
+			height: auto;
+		}
+    .triangle {border: 50px solid; border-color: #FFF transparent transparent transparent;}
+    .triangle-margin1 {margin-left: 31.5%;}
+    .triangle-margin2 {margin-left: 31.5%;}
+    .triangle-margin3 {margin-left: 31.5%;}
+    h2.sporten-title {text-align: center; line-height: 1.25em;}
+    h3.sporten-subtitle {text-align: center; line-height: 1.5em; margin: 5% 0 0;}
+    #sporten-search {
+        margin: 5% 0;
+        font-size: 1.25em;
+        padding: 1em 0;
+        text-indent: 0;
+        text-align: center;
+    }
+    .margin-for-sporten {margin: 5%;}
+    .margin-for-sporten-2 {margin: 5%;}
+    #label-meer-sporten {padding: 0 0 5%;}
+    
+    .textbox {
+        width: 100%;
+        margin: 5% 0 0;
+    }
+    .inputForm {font-size: 1.25em; padding: 1em;}
+    .adres {
+    width: 100%;
+    margin-right: 0;
+}
+/* ----------------------- FOOTER ----------------------- */
+	footer h2{
+    	font-size: 1em;
+		margin: 1.5em 0;
+	}			 
+	footer figure{
+    	width: 40%;
+  		height: 4em;
+		margin: 1.5em 5%;
+	}		 
+	footer figure:last-child{
+    	margin-top: 1.5em; 
+	}
+}
